@@ -2,11 +2,18 @@
   <ion-content>
     <ion-list>
       <ion-item ng-repeat="task in tasks">
-        {{task.pitch_number}} {{task.hours}}<br>
-        {{task.name}}<br>
-        {{task.s_name}}<br>
-        {{task.task_name}}<br>
-        {{task.comments}}
+        <div class="card card-padding">
+          <div class="item">
+            <div class="col-80">{{task.pitch_number}} </div>
+            <div class="col">{{task.hours}}</div>
+          </div>
+          <div class="item-content">
+            {{task.name}}
+            {{task.s_name}}
+            {{task.task_name}}
+            {{task.comments}}
+          </div>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
