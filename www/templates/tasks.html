@@ -1,0 +1,13 @@
+<ion-view view-title="Your Tasks">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="task in tasks">
+        {{task.pitch_number}} {{task.hours}}<br>
+        {{task.name}}<br>
+        {{task.s_name}}<br>
+        {{task.task_name}}<br>
+        {{task.comments}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
