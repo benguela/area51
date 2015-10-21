@@ -1,17 +1,18 @@
 <ion-view view-title="Your Tasks">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="task in tasks">
-        <div class="card card-padding">
-          <div class="item">
-            <div class="col-80">{{task.pitch_number}} </div>
-            <div class="col">{{task.hours}}</div>
-          </div>
-          <div class="item-content">
-            {{task.name}}
-            {{task.s_name}}
-            {{task.task_name}}
-            {{task.comments}}
+      <ion-item class="your-tasks" ng-repeat="task in tasks">
+        <div data-billable="{{task.billable}}" class="card card-padding">
+          <div class="card-item">
+            <div class="col-80 task-number">{{task.pitch_number}} </div>
+            <div class="col task-hours">{{task.hours}} Hrs</div>
+            <button class="editbtn ion-ios-compose" ng-click="modal.show()"></button>  
+          <ul class="item-content">
+            <li>{{task.name}}</li>
+            <li>{{task.s_name}}</li>
+            <li>{{task.task_name}}</li>
+            <li>{{task.comments}}</li>
+          </ul>
           </div>
         </div>
       </ion-item>
