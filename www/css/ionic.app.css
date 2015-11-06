@@ -3540,7 +3540,7 @@ ion-infinite-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #666;
+  background-color: #dbd2c9;
   overflow: hidden; }
 
 .view-container {
@@ -9287,6 +9287,39 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar-assertive {
+  border-bottom: 5px;
+  border-image: url("http://i.imgur.com/Ie1vYnI.jpg") 100 stretch;
+  -webkit-border-image: url("http://i.imgur.com/Ie1vYnI.jpg") 100 stretch;
+  -o-border-image: url("http://i.imgur.com/Ie1vYnI.jpg") 100 stretch; }
+
+.tasks-welcome {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: #faf8f7; }
+  .tasks-welcome span {
+    font-weight: bold;
+    color: #ffffff; }
+
+.totalLogged p {
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.taskDate {
+  text-align: center; }
+  .taskDate button {
+    border: none;
+    font-size: 40px;
+    color: #b04733;
+    background-color: transparent; }
+  .taskDate span {
+    color: #61271c;
+    font-weight: bold;
+    text-transform: uppercase; }
+
 .your-tasks {
   background-color: #dbd2c9;
   padding-right: 40px; }
@@ -9348,3 +9381,18 @@ a.button {
         color: black;
         font-size: 0.8rem;
         font-weight: bold; }
+
+.add-task .card {
+  background-color: #999999;
+  border-left: 5px solid #666;
+  text-align: center; }
+  .add-task .card button {
+    border: none;
+    background-color: transparent;
+    font-size: 5rem;
+    color: #666; }
+  .add-task .card button:active {
+    color: #3983b7; }
+  .add-task .card p {
+    font-weight: bold;
+    text-transform: uppercase; }

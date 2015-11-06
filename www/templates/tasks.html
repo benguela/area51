@@ -1,21 +1,131 @@
 <ion-view view-title="Your Tasks">
-  <ion-content>
-    <ion-list>
-      <ion-item class="your-tasks" ng-repeat="task in tasks">
-        <div data-billable="{{task.billable}}" class="card card-padding">
-          <div class="card-item">
-            <div class="col-80 task-number">{{task.pitch_number}} </div>
-            <div class="col task-hours">{{task.hours}} Hrs</div>
-            <button class="editbtn ion-ios-compose" ng-click="modal.show()"></button>  
-          <ul class="item-content">
-            <li>{{task.name}}</li>
-            <li>{{task.s_name}}</li>
-            <li>{{task.task_name}}</li>
-            <li>{{task.comments}}</li>
-          </ul>
-          </div>
-        </div>
-      </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+    
+        <h1 class="tasks-welcome">Welcome to your tasks <span>Pablo</span></h1>
+
+
+            
+              <div class="totalLogged">
+                  <p>
+                      Total logged this week: <strong>17 hours</strong>
+                  </p>
+              </div>
+              
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+            <ion-slide>
+
+              
+               <div class="taskDate">
+                   <button class="ion-android-arrow-dropleft-circle"></button>
+                   <span>Wed, 12 October</span>
+                   <button class="ion-android-arrow-dropright-circle"></button>
+               </div>
+                
+                <ion-list>
+                    <ion-item class="your-tasks" ng-repeat="task in tasks">
+                        <div data-billable="{{task.billable}}" class="card card-padding">
+                            <div class="card-item">
+                                <div class="col-80 task-number">{{task.pitch_number}} </div>
+                                <div class="col task-hours">{{task.hours}} Hrs</div>
+                                <button class="editbtn ion-ios-compose" ng-click="modal.show()"></button>
+                                <ul class="item-content">
+                                    <li>{{task.name}}</li>
+                                    <li>{{task.s_name}}</li>
+                                    <li>{{task.task_name}}</li>
+                                    <li>{{task.comments}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="your-tasks add-task">
+                        <div class="card card-padding">
+                            <div class="card-item">
+                                <button class="ion-android-add-circle"></button>
+                                <p>add a task</p>
+                            </div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+                
+            </ion-slide>
+            
+            <ion-slide>
+
+              
+               <div class="taskDate">
+                   <button class="ion-android-arrow-dropleft-circle"></button>
+                   <span>Wed, 12 October</span>
+                   <button class="ion-android-arrow-dropright-circle"></button>
+               </div>
+                
+                <ion-list>
+                    <ion-item class="your-tasks" ng-repeat="task in tasks">
+                        <div data-billable="{{task.billable}}" class="card card-padding">
+                            <div class="card-item">
+                                <div class="col-80 task-number">{{task.pitch_number}} </div>
+                                <div class="col task-hours">{{task.hours}} Hrs</div>
+                                <button class="editbtn ion-ios-compose" ng-click="modal.show()"></button>
+                                <ul class="item-content">
+                                    <li>{{task.name}}</li>
+                                    <li>{{task.s_name}}</li>
+                                    <li>{{task.task_name}}</li>
+                                    <li>{{task.comments}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="your-tasks add-task">
+                        <div class="card card-padding">
+                            <div class="card-item">
+                                <button class="ion-android-add-circle"></button>
+                                <p>add a task</p>
+                            </div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+                
+            </ion-slide>
+            
+            <ion-slide>
+
+              
+               <div class="taskDate">
+                   <button class="ion-android-arrow-dropleft-circle"></button>
+                   <span>Wed, 12 October</span>
+                   <button class="ion-android-arrow-dropright-circle"></button>
+               </div>
+                
+                <ion-list>
+                    <ion-item class="your-tasks" ng-repeat="task in tasks">
+                        <div data-billable="{{task.billable}}" class="card card-padding">
+                            <div class="card-item">
+                                <div class="col-80 task-number">{{task.pitch_number}} </div>
+                                <div class="col task-hours">{{task.hours}} Hrs</div>
+                                <button class="editbtn ion-ios-compose" ng-click="modal.show()"></button>
+                                <ul class="item-content">
+                                    <li>{{task.name}}</li>
+                                    <li>{{task.s_name}}</li>
+                                    <li>{{task.task_name}}</li>
+                                    <li>{{task.comments}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ion-item>
+                    <ion-item class="your-tasks add-task">
+                        <div class="card card-padding">
+                            <div class="card-item">
+                                <button class="ion-android-add-circle"></button>
+                                <p>add a task</p>
+                            </div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+                
+            </ion-slide>
+
+        </ion-slide-box>
+
+
+
+    </ion-content>
 </ion-view>

@@ -4,7 +4,60 @@ $blue: #3983b7;
 $beige: #c7b8aa;
 $green: #42c77b;
 $white: #ffffff;
+$red: #b04733;
 $baseline: 20px;
+
+.bar-assertive{
+     border-bottom: 5px;
+     border-image: url('http://i.imgur.com/Ie1vYnI.jpg') 100 stretch; 
+    -webkit-border-image: url('http://i.imgur.com/Ie1vYnI.jpg') 100 stretch;
+    -o-border-image: url('http://i.imgur.com/Ie1vYnI.jpg') 100 stretch;
+}
+
+.tasks-welcome{
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: lighten($beige, 25);
+    
+    span{
+        font-weight: bold;
+        color: $white;
+    }
+    
+}
+
+.totalLogged{
+ 
+    p{
+        padding: $baseline 0;
+        text-align: center;
+        color: $white;
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+}
+
+.taskDate{
+    
+    text-align: center;
+     
+    button{
+        border: none;
+        font-size: 40px;
+        color: $red;
+        background-color: transparent;
+//        border-radius: 50%;
+    }
+    
+    span{
+        color: darken($red, 20);
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+    
+}
 
 .your-tasks{
     
@@ -91,6 +144,34 @@ $baseline: 20px;
              }
          }
 
+    }
+    
+}
+
+.add-task{
+     
+    .card{
+        background-color: lighten($gray,20);
+        border-left: 5px solid $gray;
+        text-align: center;
+        
+        button{
+            border:none;
+            background-color: transparent;
+            font-size: 5rem;
+            color: $gray;
+        }
+        
+        button:active{
+            color: $blue;
+        }
+        
+        p{
+             font-weight: bold;
+             text-transform: uppercase;
+        }
+        
+        
     }
     
 }

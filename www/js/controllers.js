@@ -44,7 +44,7 @@ angular.module('area51.controllers', [])
 .controller('TasksCtrl', ['$scope', 'TaskFactory', function($scope, TaskFactory) {
   TaskFactory.get().success(function(data) {
     var allTasks = data;
-    $scope.tasks = allTasks['2015-10-12'];
+    $scope.tasks = allTasks['2015-10-13'];
   });
 }])
 
